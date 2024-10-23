@@ -6,14 +6,14 @@ const sendAlertEmail = (city, message) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'purvisolanki20695@acropolis.in',
-      pass: 'Purvi@@@180602',
+      user: 'your_email@gmail.com',
+      pass: 'password',
     },
   });
 
   const mailOptions = {
-    from: 'purvisolanki20695@acropolis.in',
-    to: 'purvisolanki018@gmail.com',
+    from: 'your_email@gmail.com',
+    to: 'receiver_email@gmail.com',
     subject: `Weather Alert for ${city}`,
     text: message,
   };
